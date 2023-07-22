@@ -4,7 +4,7 @@ import Signup from './components/Signup/Signup'
 import 'bootstrap/dist/css/bootstrap.css'
 import Login from './components/Login/Login';
 import Create from './components/Create/Create';
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, HashRouter } from "react-router-dom";
 import app from './firebase/config';
 import { getAuth, createUserWithEmailAndPassword } from "firebase/auth";
 
@@ -17,14 +17,14 @@ function App() {
 
   return (
     <div className="app">
-      <BrowserRouter basename='olx-react'>
+      <HashRouter basename='olx-react'>
       <Routes>
         <Route path="/olx-react" element={<Home/>}/>
         <Route path="/login" element={<Login />}/>
         <Route path="/create" element={<Create/>}/>
         <Route path="/signup" element={<Signup/>}/>
       </Routes>
-      </BrowserRouter>
+      </HashRouter>
       
     </div>
   );
