@@ -17,14 +17,14 @@ function App() {
 
   return (
     <div className="app">
-      <HashRouter basename='olx-react'>
+      <BrowserRouter >
       <Routes>
-        <Route path="/olx-react" element={<Home/>}/>
+        <Route path="/" element={<Home/>}/>
         <Route path="/login" element={<Login />}/>
         <Route path="/create" element={<Create/>}/>
         <Route path="/signup" element={<Signup/>}/>
       </Routes>
-      </HashRouter>
+      </BrowserRouter>
       
     </div>
   );
