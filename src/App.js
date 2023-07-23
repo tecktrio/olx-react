@@ -17,7 +17,7 @@ function App() {
 console.log('hello')
   return (
     <div className="app">
-      <BrowserRouter >
+      <BrowserRouter basename='olx-react'>
       <Routes>
         <Route path="/" element={<Home/>}/>
         <Route path="/login" element={<Login />}/>
