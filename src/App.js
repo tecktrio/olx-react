@@ -14,7 +14,7 @@ const auth = getAuth(app);
 
 
 function App() {
-
+console.log('hello')
   return (
     <div className="app">
       <BrowserRouter >
