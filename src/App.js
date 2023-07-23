@@ -19,7 +19,7 @@ console.log('hello')
     <div className="app">
       <BrowserRouter basename='olx-react'>
       <Routes>
-        <Route path="/" element={<Home/>}/>
+        <Route path="/olx-react" element={<Home/>}/>
         <Route path="/login" element={<Login />}/>
         <Route path="/create" element={<Create/>}/>
         <Route path="/signup" element={<Signup/>}/>
